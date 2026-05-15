@@ -1,8 +1,8 @@
 {
-  "name": "pmndrs",
+  "name": "pmndrs-mudit",
   "icon": "assets/pmndrs.png",
-  "displayName": "poimandres",
-  "description": "poimandres dark theme",
+  "displayName": "poimandres-mudit",
+  "description": "poimandres dark theme (updated by mudit)",
   "version": "0.3.7",
   "keywords": [
     "poimandres",
@@ -17,16 +17,16 @@
   "scripts": {
     "dev": "node src/watcher"
   },
-  "author": "Paul Henschel",
+  "author": "Paul Henschel, Mudit Pandey",
   "publisher": "pmndrs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/drcmda/poimandres-theme/issues"
+    "url": "https://github.com/mudit2812/poimandres-theme/issues"
   },
-  "homepage": "https://github.com/drcmda/poimandres-theme#readme",
+  "homepage": "https://github.com/mudit2812/poimandres-theme#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drcmda/poimandres-theme.git"
+    "url": "git+https://github.com/mudit2812/poimandres-theme.git"
   },
   "engines": {
     "vscode": "^1.54.0"
@@ -37,22 +37,22 @@
   "contributes": {
     "themes": [
       {
-        "label": "poimandres",
+        "label": "poimandres-mudit",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme.json"
       },
       {
-        "label": "poimandres-noitalics",
+        "label": "poimandres-noitalics-mudit-unchanged",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme-noitalics.json"
       },
       {
-        "label": "poimandres-storm",
+        "label": "poimandres-storm-mudit",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme-storm.json"
       },
       {
-        "label": "poimandres-noitalics-storm",
+        "label": "poimandres-noitalics-storm-mudit-unchanged",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme-noitalics-storm.json"
       }
