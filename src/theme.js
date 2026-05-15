@@ -149,7 +149,7 @@ function schema({ colors, styles }) {
       "editorOverviewRuler.wordHighlightStrongForeground": "${colors.lowerBlue}cc",
       "editorPane.background": "${colors.bg}",
       "editorRuler.foreground": "${colors.offWhite}10",
-      "editorUnnecessaryCode.opacity": "${colors.black}aa",
+      "editorUnnecessaryCode.opacity": "${colors.white}65",
       "editorWarning.foreground": "${colors.brightYellow}",
       "editorWhitespace.foreground": "${colors.focus}",
       "editorWidget.border": "${colors.gray}",
@@ -352,12 +352,13 @@ function schema({ colors, styles }) {
       "minimapSlider.activeBackground": "${colors.gray}30",
       "minimapSlider.background": "${colors.gray}20",
       "minimapSlider.hoverBackground": "${colors.gray}30",
-      "notebook.cellBorderColor": "${colors.bg}",
+      "notebook.cellBorderColor": "#3a3a3a",
       "notebook.cellInsertionIndicator": "${colors.transparent}",
       "notebook.cellStatusBarItemHoverBackground": "${colors.white}26",
       "notebook.cellToolbarSeparator": "${colors.focus}",
-      "notebook.focusedCellBorder": "${colors.transparent}",
-      "notebook.focusedEditorBorder": "${colors.transparent}",
+      "notebook.focusedCellBackground": "#4444441c",
+      "notebook.focusedCellBorder": "#323232",
+      "notebook.focusedEditorBorder": "#505050",
       "notebook.focusedRowBorder": "${colors.transparent}",
       "notebook.inactiveFocusedCellBorder": "${colors.transparent}",
       "notebook.outputContainerBackgroundColor": "${colors.bg}",
@@ -1243,6 +1244,22 @@ function schema({ colors, styles }) {
 
       {
         "scope": [
+          "source.python"
+        ],
+        "settings": {
+          "foreground": "#e4f0fbcc"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.function.python"
+        ],
+        "settings": {
+          "foreground": "#7AA2F7"
+        }
+      },
+      {
+        "scope": [
           "comment.line.number-sign.python",
           "string.quoted.docstring.multi.python",
         ],
@@ -1252,13 +1269,15 @@ function schema({ colors, styles }) {
       },
       {
         "scope": [
+          "string",
+          "string.quoted",
           "string.quoted.single.python",
           "string.quoted.multi.python",
           "string.interpolated.python",
           "string.quoted.docstring.raw.multi.python",
         ],
         "settings": {
-          "foreground": "#5BE386"
+          "foreground": "#5de4a0"
         }
       },
       {
@@ -1266,7 +1285,7 @@ function schema({ colors, styles }) {
           "constant.other.caps.python"
         ],
         "settings": {
-          "foreground": "#ebc373"
+          "foreground": "#FF9E64"
         }
       },
       {
@@ -1280,20 +1299,49 @@ function schema({ colors, styles }) {
       },
       {
         "scope": [
-          "variable.parameter.function.language.special.self.python",
+          "variable.language.special.self.python",
           "variable.language.special.cls.python",
         ],
         "settings": {
-          "foreground": "#80a3e5"
+          "foreground": "#6f98e4"
         }
       },
+      {
+        "scope": [
+          "meta.attribute.python",
+        ],
+        "settings": {
+          "foreground": "#d7d7d7"
+        }
+      },
+      {
+        "scope": [
+          "meta.function-call.generic.python",
+        ],
+        "settings": {
+          "foreground": "#69b9ff"
+        }
+      },
+      {
+        "scope": [
+          "support.type.python",
+          "support.function.magic.python",
+        ],
+        "settings": {
+          "foreground": "#4ddaf3"
+        }
+      },
+      {
+        "scope": [
+          "variable.parameter.function.language.special.self.python",
+          "variable.parameter.function.language.special.cls.python",
+          "variable.parameter.function.language.python",
+        ],
+        "settings": {
+          "foreground": "#ebd096"
+        }
+      }
     ],
-
-
-    "semanticHighlighting" : true,
-    "semanticTokenColors": {
-      "namespace": "#75b3e9",
-    }
   }
   `
 }
