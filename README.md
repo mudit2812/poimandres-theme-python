@@ -2,7 +2,7 @@ This is a fork of the Poimandres theme with better highlighting for Python. To u
 ```bash
 git clone https://github.com/mudit2812/poimandres-theme
 cd poimandres-theme
-ln -s . "$HOME/.vscode/extensions/pmndrs.pmndrs-python-skin-0.3.7"
+ln -s . "$HOME/.vscode/extensions/pmndrs.pmndrs-python-0.3.7"
 ```
 
 ## Upstream repository's README content:
