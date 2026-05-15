@@ -1,3 +1,12 @@
+This is a fork of the Poimandres theme with better highlighting for Python. To use it, clone the repository locally and symlink it to the folder where VSCode extensions are saved. For MacOS, use the following:
+```bash
+git clone https://github.com/mudit2812/poimandres-theme
+cd poimandres-theme
+ln -s . "$HOME/.vscode/extensions/pmndrs.pmndrs-python-skin-0.3.7"
+```
+
+## Upstream repository's README content:
+
 <p align="middle">
   <img src="assets/dots.png" width="200" />
   <img src="assets/screencap.jpg" />
@@ -23,7 +32,7 @@ The screencap above uses the following settings:
 
 #### Contribute
 
-    git clone https://github.com/drcmda/poimandres-theme
+    git clone https://github.com/mudit2812/poimandres-theme
     cd poimandres-theme
     npm install
     npm run dev
