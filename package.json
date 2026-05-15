@@ -1,8 +1,8 @@
 {
-  "name": "pmndrs-mudit",
+  "name": "pmndrs-python",
   "icon": "assets/pmndrs.png",
-  "displayName": "poimandres-mudit",
-  "description": "poimandres dark theme (updated by mudit)",
+  "displayName": "poimandres-python",
+  "description": "poimandres dark theme (optimized for Python)",
   "version": "0.3.7",
   "keywords": [
     "poimandres",
@@ -37,24 +37,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "poimandres-mudit",
+        "label": "poimandres-python",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme.json"
       },
       {
-        "label": "poimandres-noitalics-mudit-unchanged",
-        "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-color-theme-noitalics.json"
-      },
-      {
-        "label": "poimandres-storm-mudit",
+        "label": "poimandres-storm-python",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme-storm.json"
-      },
-      {
-        "label": "poimandres-noitalics-storm-mudit-unchanged",
-        "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-color-theme-noitalics-storm.json"
       }
     ]
   },

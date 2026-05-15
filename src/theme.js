@@ -31,8 +31,6 @@ const base = {
   },
 }
 
-const noitalics = { ...base, styles: { ...base.styles, fontStyle: '' } }
-
 const storm = {
   ...base,
   colors: {
@@ -44,12 +42,6 @@ const storm = {
     selection: '#818cc425',
     black: '#101010',
   },
-}
-
-const stormNoitalics = {
-  ...base,
-  colors: { ...storm.colors },
-  styles: { ...base.styles, fontStyle: '' },
 }
 
 function schema({ colors, styles }) {
