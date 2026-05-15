@@ -200,7 +200,7 @@ function schema({ colors, styles }) {
       "tab.unfocusedActiveModifiedBorder": "${colors.lightBlue}40",
       "tab.unfocusedInactiveBackground": "${colors.bg}",
       "tab.unfocusedInactiveForeground": "${colors.gray}80",
-      "tab.unfocusedInactiveModifiedBorder": "${colors.lightBlue}40",      
+      "tab.unfocusedInactiveModifiedBorder": "${colors.lightBlue}40",
       "terminal.ansiBlack": "${colors.bg}",
       "terminal.ansiBlue": "${colors.lowerBlue}",
       "terminal.ansiBrightBlack": "${colors.gray}",
@@ -285,7 +285,7 @@ function schema({ colors, styles }) {
       "debugView.valueChangedHighlight": "${colors.lowerBlue}",
       "descriptionForeground": "${colors.gray}b3",
       "diffEditor.diagonalFill": "${colors.gray}33",
-      "dropdown.foreground": "${colors.offWhite}",    
+      "dropdown.foreground": "${colors.offWhite}",
       "errorForeground": "${colors.hotRed}",
       "extensionBadge.remoteBackground": "${colors.focus}",
       "extensionBadge.remoteForeground": "${colors.offWhite}",
@@ -566,12 +566,12 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": [         
-          "support.class.error", 
-          "keyword.control.trycatch", 
-          "keyword.operator.expression.delete", 
-          "keyword.operator.expression.void", 
-          "keyword.operator.void", 
+        "scope": [
+          "support.class.error",
+          "keyword.control.trycatch",
+          "keyword.operator.expression.delete",
+          "keyword.operator.expression.void",
+          "keyword.operator.void",
           "keyword.operator.delete",
           "constant.language.null",
           "constant.language.boolean.false",
@@ -643,7 +643,7 @@ function schema({ colors, styles }) {
       },
       {
         "scope": [
-          "constant.other.color",          
+          "constant.other.color",
           "meta.tag",
           "punctuation.definition.tag",
           "punctuation.separator.inheritance.php",
@@ -706,7 +706,7 @@ function schema({ colors, styles }) {
           "constant.numeric",
           "support.constant",
           "constant.character",
-          "constant.escape",          
+          "constant.escape",
           "keyword.other.unit",
           "keyword.other",
           "string",
@@ -753,7 +753,7 @@ function schema({ colors, styles }) {
       },
       {
         "scope": [
-          "entity.name",          
+          "entity.name",
           "support.orther.namespace.use.php",
           "meta.use.php",
           "support.other.namespace.php",
@@ -1238,8 +1238,62 @@ function schema({ colors, styles }) {
         "settings": {
           "foreground": "${colors.gray}"
         }
-      }
-    ]
+      },
+
+
+      {
+        "scope": [
+          "comment.line.number-sign.python",
+          "string.quoted.docstring.multi.python",
+        ],
+        "settings": {
+          "foreground": "#868CADB0"
+        }
+      },
+      {
+        "scope": [
+          "string.quoted.single.python",
+          "string.quoted.multi.python",
+          "string.interpolated.python",
+          "string.quoted.docstring.raw.multi.python",
+        ],
+        "settings": {
+          "foreground": "#5BE386"
+        }
+      },
+      {
+        "scope": [
+          "constant.other.caps.python"
+        ],
+        "settings": {
+          "foreground": "#ebc373"
+        }
+      },
+      {
+        "scope": [
+          "string.regexp.quoted.single.python",
+          "string.quoted.raw.single.python",
+        ],
+        "settings": {
+          "foreground": "#5FB3A1"
+        }
+      },
+      {
+        "scope": [
+          "variable.parameter.function.language.special.self.python",
+          "variable.language.special.cls.python",
+        ],
+        "settings": {
+          "foreground": "#80a3e5"
+        }
+      },
+    ],
+
+
+    "semanticHighlighting" : true,
+    "semanticTokenColors": {
+      "namespace": "#75b3e9",
+    }
   }
   `
 }
