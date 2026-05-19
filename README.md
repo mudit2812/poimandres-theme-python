@@ -1,7 +1,7 @@
 This is a fork of the Poimandres theme with better highlighting for Python. To use it without installing Node.js, clone the repository locally and symlink it to the folder where VSCode extensions are saved. For MacOS, use the following:
 ```bash
-git clone https://github.com/mudit2812/poimandres-theme
-cd poimandres-theme
+git clone https://github.com/mudit2812/poimandres-theme-python.git
+cd poimandres-theme-python
 ln -s . "$HOME/.vscode/extensions/pmndrs.pmndrs-python-0.3.7"
 ```
 
