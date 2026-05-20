@@ -1460,14 +1460,6 @@
     },
     {
       "scope": [
-        "meta.attribute.python"
-      ],
-      "settings": {
-        "foreground": "#d7d7d7"
-      }
-    },
-    {
-      "scope": [
         "meta.function-call.generic.python"
       ],
       "settings": {

@@ -1193,12 +1193,6 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             },
             {
                 "scope": [
-                    "meta.attribute.python",
-                ],
-                "settings": {"foreground": "#d7d7d7"},
-            },
-            {
-                "scope": [
                     "meta.function-call.generic.python",
                 ],
                 "settings": {"foreground": "#69b9ff"},
