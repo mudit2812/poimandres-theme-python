@@ -39,10 +39,20 @@
       {
         "label": "poimandres-python",
         "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-color-theme.json"
+        "path": "./themes/poimandres-python-theme.json"
       },
       {
         "label": "poimandres-storm-python",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-python-theme-storm.json"
+      },
+      {
+        "label": "poimandres-default",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-color-theme-storm.json"
+      },
+      {
+        "label": "poimandres-storm-default",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme-storm.json"
       }
