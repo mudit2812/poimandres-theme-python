@@ -12,7 +12,7 @@ _BASE_COLORS = {
     "lightBlue": "#ADD7FF",
     "desaturatedBlue": "#91B4D5",
     "bluishGrayBrighter": "#7390AA",
-    "hotRed": "#d3649d",
+    "hotRed": "#d0679d",
     "pink": "#f087bd",
     "gray": "#a6accd",
     "darkerGray": "#767c9d",
