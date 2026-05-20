@@ -55,6 +55,21 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
         "name": "poimandres dark theme (python)",
         "type": "dark",
         "colors": {
+            # Bracket highlighting (new)
+            "editorBracketHighlight.foreground1": "#c49a5a",  # "#e0af68",
+            "editorBracketHighlight.foreground2": "#80a856",  # "#9ECE6A",
+            "editorBracketHighlight.foreground3": "#25aac2",  # "#2AC3DE",
+            "editorBracketHighlight.foreground4": "#9a7ecc",  # "#BB9AF7",
+            "editorBracketHighlight.foreground5": "#68b3de",  # "#7DCFFF",
+            "editorBracketHighlight.foreground6": "#698cd6",  # "#7AA2F7",
+            "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
+            "editorBracketPairGuide.activeBackground1": "#c49a5a",
+            "editorBracketPairGuide.activeBackground2": "#80a856",
+            "editorBracketPairGuide.activeBackground3": "#25aac2",
+            "editorBracketPairGuide.activeBackground4": "#9a7ecc",
+            "editorBracketPairGuide.activeBackground5": "#68b3de",
+            "editorBracketPairGuide.activeBackground6": "#698cd6",
+            # From before
             "activityBar.background": f"{colors.bg}",
             "activityBar.foreground": f"{colors.gray}",
             "activityBarBadge.background": f"{colors.focus}",
@@ -1130,6 +1145,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             },
             {"scope": ["log.verbose"], "settings": {"foreground": f"{colors.gray}"}},
             {"scope": ["source.python"], "settings": {"foreground": "#e4f0fbcc"}},
+            # For Python (new)
             {
                 "scope": ["entity.name.function.python"],
                 "settings": {"foreground": "#7AA2F7"},
