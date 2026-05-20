@@ -60,12 +60,12 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
         "type": "dark",
         "colors": {
             # Bracket highlighting (new)
-            "editorBracketHighlight.foreground1": "#c49a5ae0",  # "#e0af68"
-            "editorBracketHighlight.foreground2": "#80a856e0",  # "#9ECE6A"
-            "editorBracketHighlight.foreground3": "#25aac2e0",  # "#2AC3DE"
-            "editorBracketHighlight.foreground4": "#9a7ecce0",  # "#BB9AF7"
-            "editorBracketHighlight.foreground5": "#68b3dee0",  # "#7DCFFF"
-            "editorBracketHighlight.foreground6": "#698cd6e0",  # "#7AA2F7"
+            "editorBracketHighlight.foreground1": "#c49a5a",  # "#e0af68"
+            "editorBracketHighlight.foreground2": "#80a856",  # "#9ECE6A"
+            "editorBracketHighlight.foreground3": "#25aac2",  # "#2AC3DE"
+            "editorBracketHighlight.foreground4": "#9a7ecc",  # "#BB9AF7"
+            "editorBracketHighlight.foreground5": "#68b3de",  # "#7DCFFF"
+            "editorBracketHighlight.foreground6": "#698cd6",  # "#7AA2F7"
             "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
             "editorBracketPairGuide.activeBackground1": "#c49a5a",
             "editorBracketPairGuide.activeBackground2": "#80a856",
