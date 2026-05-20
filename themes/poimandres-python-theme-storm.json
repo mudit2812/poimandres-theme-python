@@ -2,12 +2,12 @@
   "name": "poimandres dark theme (python)",
   "type": "dark",
   "colors": {
-    "editorBracketHighlight.foreground1": "#e0af68",
-    "editorBracketHighlight.foreground2": "#9ECE6A",
-    "editorBracketHighlight.foreground3": "#2AC3DE",
-    "editorBracketHighlight.foreground4": "#BB9AF7",
-    "editorBracketHighlight.foreground5": "#7DCFFF",
-    "editorBracketHighlight.foreground6": "#7AA2F7",
+    "editorBracketHighlight.foreground1": "#c49a5ae0",
+    "editorBracketHighlight.foreground2": "#80a856e0",
+    "editorBracketHighlight.foreground3": "#25aac2e0",
+    "editorBracketHighlight.foreground4": "#9a7ecce0",
+    "editorBracketHighlight.foreground5": "#68b3dee0",
+    "editorBracketHighlight.foreground6": "#698cd6e0",
     "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
     "editorBracketPairGuide.activeBackground1": "#c49a5a",
     "editorBracketPairGuide.activeBackground2": "#80a856",
@@ -1413,7 +1413,7 @@
         "string.quoted.docstring.multi.python"
       ],
       "settings": {
-        "foreground": "##868cadB0"
+        "foreground": "#868cadB0"
       }
     },
     {
@@ -1431,13 +1431,20 @@
     },
     {
       "scope": [
-        "constant.other.caps.python",
+        "constant.other.caps.python"
+      ],
+      "settings": {
+        "foreground": "#d0679d"
+      }
+    },
+    {
+      "scope": [
         "constant.language.python",
         "constant.numeric.float.python",
         "constant.numeric.dec.python"
       ],
       "settings": {
-        "foreground": "#a08bff"
+        "foreground": "#a590ff"
       }
     },
     {
@@ -1469,7 +1476,9 @@
     {
       "scope": [
         "support.type.python",
-        "support.function.magic.python"
+        "support.function.magic.python",
+        "support.function.builtin.python",
+        "support.type.exception.python"
       ],
       "settings": {
         "foreground": "#4ddaf3"

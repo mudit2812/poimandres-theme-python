@@ -25,6 +25,8 @@ _BASE_COLORS = {
     "white": "#ffffff",
     "black": "#000000",
     "transparent": "#00000000",
+    "purple": "#a590ff",
+    "orange": "#edb469",
 }
 
 _BASE_STYLES = {"fontStyle": "italic"}
@@ -58,12 +60,12 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
         "type": "dark",
         "colors": {
             # Bracket highlighting (new)
-            "editorBracketHighlight.foreground1": "#e0af68",  # "#c49a5a"
-            "editorBracketHighlight.foreground2": "#9ECE6A",  # "#80a856"
-            "editorBracketHighlight.foreground3": "#2AC3DE",  # "#25aac2"
-            "editorBracketHighlight.foreground4": "#BB9AF7",  # "#9a7ecc"
-            "editorBracketHighlight.foreground5": "#7DCFFF",  # "#68b3de"
-            "editorBracketHighlight.foreground6": "#7AA2F7",  # "#698cd6"
+            "editorBracketHighlight.foreground1": "#c49a5ae0",  # "#e0af68"
+            "editorBracketHighlight.foreground2": "#80a856e0",  # "#9ECE6A"
+            "editorBracketHighlight.foreground3": "#25aac2e0",  # "#2AC3DE"
+            "editorBracketHighlight.foreground4": "#9a7ecce0",  # "#BB9AF7"
+            "editorBracketHighlight.foreground5": "#68b3dee0",  # "#7DCFFF"
+            "editorBracketHighlight.foreground6": "#698cd6e0",  # "#7AA2F7"
             "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
             "editorBracketPairGuide.activeBackground1": "#c49a5a",
             "editorBracketPairGuide.activeBackground2": "#80a856",
@@ -1157,7 +1159,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                     "comment.line.number-sign.python",
                     "string.quoted.docstring.multi.python",
                 ],
-                "settings": {"foreground": f"#{colors.darkerGray}B0"},
+                "settings": {"foreground": f"{colors.darkerGray}B0"},
             },
             {
                 "scope": [
@@ -1171,13 +1173,16 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "settings": {"foreground": "#5de4a0"},
             },
             {
+                "scope": ["constant.other.caps.python"],
+                "settings": {"foreground": f"{colors.hotRed}"},
+            },
+            {
                 "scope": [
-                    "constant.other.caps.python",
                     "constant.language.python",
                     "constant.numeric.float.python",
                     "constant.numeric.dec.python",
                 ],
-                "settings": {"foreground": "#a08bff"},
+                "settings": {"foreground": f"{colors.purple}"},
             },
             {
                 "scope": [
@@ -1203,6 +1208,8 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "support.type.python",
                     "support.function.magic.python",
+                    "support.function.builtin.python",
+                    "support.type.exception.python",
                 ],
                 "settings": {"foreground": "#4ddaf3"},
             },

@@ -19,7 +19,10 @@ def main() -> None:
         path = THEMES_DIR / filename
         path.write_text(schema(theme) + "\n", encoding="utf-8")
         print(f"Wrote {path.relative_to(ROOT)}")
+    (((((())))))
 
+
+IndexError
 
 if __name__ == "__main__":
     main()
