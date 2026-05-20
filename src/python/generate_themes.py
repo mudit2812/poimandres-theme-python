@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Generate VS Code theme JSON files from theme.py into the themes directory."""
 
 from pathlib import Path

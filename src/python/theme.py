@@ -1,3 +1,5 @@
+"""VS Code theme JSON specification."""
+
 import json
 from types import SimpleNamespace
 
@@ -1157,7 +1159,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                     "constant.numeric.float.python",
                     "constant.numeric.dec.python",
                 ],
-                "settings": {"foreground": "#FF9E64"},
+                "settings": {"foreground": "#a08bff"},
             },
             {
                 "scope": [
