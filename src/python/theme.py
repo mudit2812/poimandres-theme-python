@@ -323,7 +323,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             "gitDecoration.untrackedResourceForeground": f"{colors.brightMint}",
             "icon.foreground": f"{colors.gray}",
             "imagePreview.border": f"{colors.focus}",
-            "inputOption.activeBackground": f"{colors.transparent}",
+            "inputOption.activeBackground": f"{colors.selection}",
             "inputOption.activeBorder": f"{colors.transparent}",
             "inputOption.activeForeground": f"{colors.white}",
             "inputValidation.errorBackground": f"{colors.bg}",

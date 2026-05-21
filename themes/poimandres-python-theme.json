@@ -263,7 +263,7 @@
     "gitDecoration.untrackedResourceForeground": "#5DE4c7",
     "icon.foreground": "#a6accd",
     "imagePreview.border": "#303340",
-    "inputOption.activeBackground": "#00000000",
+    "inputOption.activeBackground": "#717cb460",
     "inputOption.activeBorder": "#00000000",
     "inputOption.activeForeground": "#ffffff",
     "inputValidation.errorBackground": "#1b1e28",
