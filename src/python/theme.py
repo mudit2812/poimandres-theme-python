@@ -81,7 +81,6 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             "badge.background": f"{colors.focus}",
             "badge.foreground": f"{colors.offWhite}",
             "button.background": f"{colors.focus}",
-            # "diffEditor.insertedLineBackground": f"{colors.bluishGreen}50",
             "diffEditor.insertedLineBackground": f"#5de4a025",
             "diffEditor.removedLineBackground": f"{colors.hotRed}40",
             "diffEditor.insertedTextBackground": f"{colors.bluishGray}15",
