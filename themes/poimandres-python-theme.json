@@ -22,6 +22,8 @@
     "badge.background": "#303340",
     "badge.foreground": "#e4f0fb",
     "button.background": "#303340",
+    "diffEditor.insertedLineBackground": "#5de4a025",
+    "diffEditor.removedLineBackground": "#d0679d40",
     "diffEditor.insertedTextBackground": "#50647715",
     "diffEditor.removedTextBackground": "#d0679d20",
     "dropdown.background": "#1b1e28",

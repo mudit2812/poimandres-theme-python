@@ -7,7 +7,7 @@ _BASE_COLORS = {
     "brightYellow": "#fffac2",
     "brightMint": "#5DE4c7",
     "lowerMint": "#5fb3a1",
-    "blueishGreen": "#42675A",
+    "bluishGreen": "#42675A",
     "lowerBlue": "#89ddff",
     "lightBlue": "#ADD7FF",
     "desaturatedBlue": "#91B4D5",
@@ -81,6 +81,9 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             "badge.background": f"{colors.focus}",
             "badge.foreground": f"{colors.offWhite}",
             "button.background": f"{colors.focus}",
+            # "diffEditor.insertedLineBackground": f"{colors.bluishGreen}50",
+            "diffEditor.insertedLineBackground": f"#5de4a025",
+            "diffEditor.removedLineBackground": f"{colors.hotRed}40",
             "diffEditor.insertedTextBackground": f"{colors.bluishGray}15",
             "diffEditor.removedTextBackground": f"{colors.hotRed}20",
             "dropdown.background": f"{colors.bg}",
@@ -826,7 +829,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             },
             {
                 "scope": ["source.sass keyword.control"],
-                "settings": {"foreground": f"{colors.blueishGreen}"},
+                "settings": {"foreground": f"{colors.bluishGreen}"},
             },
             {
                 "scope": ["markup.inserted"],
@@ -861,7 +864,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                     "tag.decorator.js punctuation.definition.tag.js",
                 ],
                 "settings": {
-                    "foreground": f"{colors.blueishGreen}",
+                    "foreground": f"{colors.bluishGreen}",
                     "fontStyle": f"{styles.fontStyle}",
                 },
             },
