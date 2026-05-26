@@ -60,12 +60,12 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
         "type": "dark",
         "colors": {
             # Bracket highlighting (new)
-            "editorBracketHighlight.foreground1": "#c49a5a",  # "#e0af68"
-            "editorBracketHighlight.foreground2": "#80a856",  # "#9ECE6A"
-            "editorBracketHighlight.foreground3": "#25aac2",  # "#2AC3DE"
-            "editorBracketHighlight.foreground4": "#9a7ecc",  # "#BB9AF7"
-            "editorBracketHighlight.foreground5": "#68b3de",  # "#7DCFFF"
-            "editorBracketHighlight.foreground6": "#698cd6",  # "#7AA2F7"
+            "editorBracketHighlight.foreground1": "#e0af68",  # "#c49a5a"
+            "editorBracketHighlight.foreground2": "#9ECE6A",  # "#80a856"
+            "editorBracketHighlight.foreground3": "#2AC3DE",  # "#25aac2"
+            "editorBracketHighlight.foreground4": "#BB9AF7",  # "#9a7ecc"
+            "editorBracketHighlight.foreground5": "#7DCFFF",  # "#68b3de"
+            "editorBracketHighlight.foreground6": "#7AA2F7",  # "#698cd6"
             "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
             "editorBracketPairGuide.activeBackground1": "#c49a5a",
             "editorBracketPairGuide.activeBackground2": "#80a856",
@@ -133,9 +133,9 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             "editorGutter.background": f"{colors.bg}",
             "editorGutter.commentRangeForeground": f"{colors.gray}",
             "editorGutter.foldingControlForeground": f"{colors.gray}",
-            "editorGutter.addedBackground": f"{colors.lowerMint}40",
-            "editorGutter.deletedBackground": f"{colors.hotRed}40",
-            "editorGutter.modifiedBackground": f"{colors.lightBlue}20",
+            "editorGutter.addedBackground": f"{colors.lowerMint}a0",
+            "editorGutter.deletedBackground": f"{colors.hotRed}a0",
+            "editorGutter.modifiedBackground": f"{colors.lightBlue}70",
             "editorHint.foreground": f"{colors.bluishGrayBrighter}b3",
             "editorHoverWidget.foreground": f"{colors.gray}",
             "editorHoverWidget.statusBarBackground": "#202430",
@@ -373,16 +373,17 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             "minimapSlider.activeBackground": f"{colors.gray}30",
             "minimapSlider.background": f"{colors.gray}20",
             "minimapSlider.hoverBackground": f"{colors.gray}30",
-            "notebook.cellBorderColor": "#3a3a3a",
+            "notebook.cellBorderColor": f"{colors.transparent}",
+            "notebook.cellEditorBackground": "#212430",
             "notebook.cellInsertionIndicator": f"{colors.transparent}",
             "notebook.cellStatusBarItemHoverBackground": f"{colors.white}26",
             "notebook.cellToolbarSeparator": f"{colors.focus}",
-            "notebook.focusedCellBackground": "#4444441c",
-            "notebook.focusedCellBorder": "#323232",
-            "notebook.focusedEditorBorder": "#505050",
+            "notebook.focusedCellBackground": f"{colors.darkerGray}18",
+            "notebook.focusedCellBorder": f"{colors.lowerMint}a0",
             "notebook.focusedRowBorder": f"{colors.transparent}",
             "notebook.inactiveFocusedCellBorder": f"{colors.transparent}",
             "notebook.outputContainerBackgroundColor": f"{colors.bg}",
+            "notebook.outputContainerBorderColor": f"{colors.hotRed}",
             "notebook.rowHoverBackground": f"{colors.focus}00",
             "notebook.selectedCellBackground": f"{colors.focus}",
             "notebook.selectedCellBorder": f"{colors.bg}",
