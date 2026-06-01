@@ -1226,5 +1226,158 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 ],
                 "settings": {"foreground": "#ebd096"},
             },
+            # For C/C++ and headers (new) — mirror the Python palette.
+            # Scoped under source.c / source.cpp so only C/C++/headers are affected.
+            {
+                "scope": ["source.c", "source.cpp"],
+                "settings": {"foreground": "#e4f0fbcc"},
+            },
+            {
+                "scope": ["source.c comment", "source.cpp comment"],
+                "settings": {
+                    "foreground": f"{colors.darkerGray}B0",
+                    "fontStyle": f"{styles.fontStyle}",
+                },
+            },
+            {
+                "scope": [
+                    "source.c string.quoted.double",
+                    "source.cpp string.quoted.double",
+                    "source.c string.quoted.single",
+                    "source.cpp string.quoted.single",
+                ],
+                "settings": {"foreground": "#5de4a0"},
+            },
+            {
+                "scope": [
+                    "source.c string.quoted.other.lt-gt.include",
+                    "source.cpp string.quoted.other.lt-gt.include",
+                    "source.c string.quoted.double.include",
+                    "source.cpp string.quoted.double.include",
+                ],
+                "settings": {"foreground": "#5FB3A1"},
+            },
+            {
+                "scope": [
+                    "source.c constant.numeric",
+                    "source.cpp constant.numeric",
+                    "source.c constant.language",
+                    "source.cpp constant.language",
+                ],
+                "settings": {"foreground": f"{colors.purple}"},
+            },
+            {
+                "scope": [
+                    "source.c storage.type",
+                    "source.cpp storage.type",
+                ],
+                "settings": {"foreground": f"{colors.desaturatedBlue}"},
+            },
+            {
+                "scope": [
+                    "source.c storage.type.built-in",
+                    "source.cpp storage.type.built-in",
+                    "source.c storage.type.primitive",
+                    "source.cpp storage.type.primitive",
+                    "source.c support.type",
+                    "source.cpp support.type",
+                ],
+                "settings": {"foreground": "#4ddaf3"},
+            },
+            {
+                "scope": [
+                    "source.c storage.modifier",
+                    "source.cpp storage.modifier",
+                ],
+                "settings": {"foreground": f"{colors.desaturatedBlue}"},
+            },
+            {
+                "scope": [
+                    "source.c keyword.operator",
+                    "source.cpp keyword.operator",
+                ],
+                "settings": {"foreground": f"{colors.desaturatedBlue}"},
+            },
+            {
+                "scope": [
+                    "source.c keyword.control",
+                    "source.cpp keyword.control",
+                ],
+                "settings": {"foreground": f"{colors.brightMint}c0"},
+            },
+            {
+                "scope": [
+                    "source.c keyword.control.directive",
+                    "source.cpp keyword.control.directive",
+                    "source.c punctuation.definition.directive",
+                    "source.cpp punctuation.definition.directive",
+                ],
+                "settings": {"foreground": f"{colors.brightMint}"},
+            },
+            {
+                "scope": [
+                    "source.c entity.name.function",
+                    "source.cpp entity.name.function",
+                    "source.c entity.name.function.call",
+                    "source.cpp entity.name.function.call",
+                    "source.c entity.name.function.member",
+                    "source.cpp entity.name.function.member",
+                ],
+                "settings": {"foreground": "#69b9ff"},
+            },
+            {
+                "scope": [
+                    "source.c entity.name.function.definition",
+                    "source.cpp entity.name.function.definition",
+                ],
+                "settings": {"foreground": "#7AA2F7"},
+            },
+            {
+                "scope": [
+                    "source.c entity.name.function.preprocessor",
+                    "source.cpp entity.name.function.preprocessor",
+                ],
+                "settings": {"foreground": f"{colors.hotRed}"},
+            },
+            {
+                "scope": [
+                    "source.c entity.name.type",
+                    "source.cpp entity.name.type",
+                    "source.cpp entity.name.scope-resolution.type",
+                ],
+                "settings": {"foreground": f"{colors.lightBlue}"},
+            },
+            {
+                "scope": [
+                    "source.cpp entity.name.namespace",
+                    "source.cpp entity.name.scope-resolution",
+                ],
+                "settings": {"foreground": f"{colors.desaturatedBlue}"},
+            },
+            {
+                "scope": [
+                    "source.c variable.parameter",
+                    "source.cpp variable.parameter",
+                ],
+                "settings": {"foreground": "#ebd096"},
+            },
+            {
+                "scope": [
+                    "source.c variable.other.property",
+                    "source.cpp variable.other.property",
+                ],
+                "settings": {"foreground": f"{colors.offWhite}"},
+            },
+            {
+                "scope": [
+                    "source.c variable.other.enummember",
+                    "source.cpp variable.other.enummember",
+                ],
+                "settings": {"foreground": f"{colors.purple}"},
+            },
+            {
+                "scope": ["source.cpp variable.language.this"],
+                "settings": {"foreground": "#6f98e4"},
+            },
         ],
     }
