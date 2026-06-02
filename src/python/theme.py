@@ -1229,11 +1229,11 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             # For C/C++ and headers (new) — mirror the Python palette.
             # Scoped under source.c / source.cpp so only C/C++/headers are affected.
             {
-                "scope": ["source.c", "source.cpp"],
+                "scope": ["source.c", "source.cpp", "source.cuda-cpp"],
                 "settings": {"foreground": "#e4f0fbcc"},
             },
             {
-                "scope": ["source.c comment", "source.cpp comment"],
+                "scope": ["source.c comment", "source.cpp comment", "source.cuda-cpp comment"],
                 "settings": {
                     "foreground": f"{colors.darkerGray}B0",
                     "fontStyle": f"{styles.fontStyle}",
@@ -1243,8 +1243,10 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c string.quoted.double",
                     "source.cpp string.quoted.double",
+                    "source.cuda-cpp string.quoted.double",
                     "source.c string.quoted.single",
                     "source.cpp string.quoted.single",
+                    "source.cuda-cpp string.quoted.single",
                 ],
                 "settings": {"foreground": "#5de4a0"},
             },
@@ -1252,8 +1254,10 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c string.quoted.other.lt-gt.include",
                     "source.cpp string.quoted.other.lt-gt.include",
+                    "source.cuda-cpp string.quoted.other.lt-gt.include",
                     "source.c string.quoted.double.include",
                     "source.cpp string.quoted.double.include",
+                    "source.cuda-cpp string.quoted.double.include",
                 ],
                 "settings": {"foreground": "#5FB3A1"},
             },
@@ -1261,8 +1265,10 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c constant.numeric",
                     "source.cpp constant.numeric",
+                    "source.cuda-cpp constant.numeric",
                     "source.c constant.language",
                     "source.cpp constant.language",
+                    "source.cuda-cpp constant.language",
                 ],
                 "settings": {"foreground": f"{colors.purple}"},
             },
@@ -1270,6 +1276,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c storage.type",
                     "source.cpp storage.type",
+                    "source.cuda-cpp storage.type",
                 ],
                 "settings": {"foreground": f"{colors.desaturatedBlue}"},
             },
@@ -1277,10 +1284,13 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c storage.type.built-in",
                     "source.cpp storage.type.built-in",
+                    "source.cuda-cpp storage.type.built-in",
                     "source.c storage.type.primitive",
                     "source.cpp storage.type.primitive",
+                    "source.cuda-cpp storage.type.primitive",
                     "source.c support.type",
                     "source.cpp support.type",
+                    "source.cuda-cpp support.type",
                 ],
                 "settings": {"foreground": "#4ddaf3"},
             },
@@ -1288,6 +1298,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c storage.modifier",
                     "source.cpp storage.modifier",
+                    "source.cuda-cpp storage.modifier",
                 ],
                 "settings": {"foreground": f"{colors.desaturatedBlue}"},
             },
@@ -1295,6 +1306,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c keyword.operator",
                     "source.cpp keyword.operator",
+                    "source.cuda-cpp keyword.operator",
                 ],
                 "settings": {"foreground": f"{colors.desaturatedBlue}"},
             },
@@ -1302,6 +1314,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c keyword.control",
                     "source.cpp keyword.control",
+                    "source.cuda-cpp keyword.control",
                 ],
                 "settings": {"foreground": f"{colors.brightMint}c0"},
             },
@@ -1309,8 +1322,10 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c keyword.control.directive",
                     "source.cpp keyword.control.directive",
+                    "source.cuda-cpp keyword.control.directive",
                     "source.c punctuation.definition.directive",
                     "source.cpp punctuation.definition.directive",
+                    "source.cuda-cpp punctuation.definition.directive",
                 ],
                 "settings": {"foreground": f"{colors.brightMint}"},
             },
@@ -1318,10 +1333,13 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c entity.name.function",
                     "source.cpp entity.name.function",
+                    "source.cuda-cpp entity.name.function",
                     "source.c entity.name.function.call",
                     "source.cpp entity.name.function.call",
+                    "source.cuda-cpp entity.name.function.call",
                     "source.c entity.name.function.member",
                     "source.cpp entity.name.function.member",
+                    "source.cuda-cpp entity.name.function.member",
                 ],
                 "settings": {"foreground": "#69b9ff"},
             },
@@ -1329,6 +1347,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c entity.name.function.definition",
                     "source.cpp entity.name.function.definition",
+                    "source.cuda-cpp entity.name.function.definition",
                 ],
                 "settings": {"foreground": "#7AA2F7"},
             },
@@ -1336,6 +1355,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c entity.name.function.preprocessor",
                     "source.cpp entity.name.function.preprocessor",
+                    "source.cuda-cpp entity.name.function.preprocessor",
                 ],
                 "settings": {"foreground": f"{colors.hotRed}"},
             },
@@ -1343,14 +1363,18 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c entity.name.type",
                     "source.cpp entity.name.type",
+                    "source.cuda-cpp entity.name.type",
                     "source.cpp entity.name.scope-resolution.type",
+                    "source.cuda-cpp entity.name.scope-resolution.type",
                 ],
                 "settings": {"foreground": f"{colors.lightBlue}"},
             },
             {
                 "scope": [
                     "source.cpp entity.name.namespace",
+                    "source.cuda-cpp entity.name.namespace",
                     "source.cpp entity.name.scope-resolution",
+                    "source.cuda-cpp entity.name.scope-resolution",
                 ],
                 "settings": {"foreground": f"{colors.desaturatedBlue}"},
             },
@@ -1358,6 +1382,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c variable.parameter",
                     "source.cpp variable.parameter",
+                    "source.cuda-cpp variable.parameter",
                 ],
                 "settings": {"foreground": "#ebd096"},
             },
@@ -1365,6 +1390,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c variable.other.property",
                     "source.cpp variable.other.property",
+                    "source.cuda-cpp variable.other.property",
                 ],
                 "settings": {"foreground": f"{colors.offWhite}"},
             },
@@ -1372,11 +1398,12 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                 "scope": [
                     "source.c variable.other.enummember",
                     "source.cpp variable.other.enummember",
+                    "source.cuda-cpp variable.other.enummember",
                 ],
                 "settings": {"foreground": f"{colors.purple}"},
             },
             {
-                "scope": ["source.cpp variable.language.this"],
+                "scope": ["source.cpp variable.language.this", "source.cuda-cpp variable.language.this"],
                 "settings": {"foreground": "#6f98e4"},
             },
         ],
