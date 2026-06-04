@@ -1223,6 +1223,7 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
                     "variable.parameter.function.language.special.self.python",
                     "variable.parameter.function.language.special.cls.python",
                     "variable.parameter.function.language.python",
+                    "variable.parameter.function-call.python",
                 ],
                 "settings": {"foreground": "#ebd096"},
             },
