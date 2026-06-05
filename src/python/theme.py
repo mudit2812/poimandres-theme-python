@@ -27,6 +27,7 @@ _BASE_COLORS = {
     "transparent": "#00000000",
     "purple": "#a590ff",
     "orange": "#edb469",
+    "darkBg": "#1a1c25",
 }
 
 _BASE_STYLES = {"fontStyle": "italic"}
@@ -43,6 +44,7 @@ storm = {
         "highlight": "#818cc425",
         "selection": "#818cc460",
         "black": "#101010",
+        "darkBg": "#222531",
     },
     "styles": dict(_BASE_STYLES),
 }
@@ -374,14 +376,14 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
             "minimapSlider.background": f"{colors.gray}20",
             "minimapSlider.hoverBackground": f"{colors.gray}30",
             "notebook.cellBorderColor": f"{colors.transparent}",
-            "notebook.cellEditorBackground": "#212430",
+            "notebook.cellEditorBackground": f"{colors.darkBg}",
             "notebook.cellInsertionIndicator": f"{colors.transparent}",
             "notebook.cellStatusBarItemHoverBackground": f"{colors.white}26",
             "notebook.cellToolbarSeparator": f"{colors.focus}",
             "notebook.focusedCellBackground": f"{colors.darkerGray}18",
             "notebook.focusedCellBorder": f"{colors.lowerMint}a0",
             "notebook.focusedRowBorder": f"{colors.transparent}",
-            "notebook.inactiveFocusedCellBorder": f"{colors.transparent}",
+            "notebook.inactiveFocusedCellBorder": f"{colors.darkBg}",
             "notebook.outputContainerBackgroundColor": f"{colors.bg}",
             "notebook.outputContainerBorderColor": f"{colors.hotRed}",
             "notebook.rowHoverBackground": f"{colors.focus}00",
