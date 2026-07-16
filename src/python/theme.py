@@ -62,19 +62,19 @@ def _build_schema(colors: SimpleNamespace, styles: SimpleNamespace) -> dict:
         "type": "dark",
         "colors": {
             # Bracket highlighting (new)
-            "editorBracketHighlight.foreground1": "#e0af68",  # "#c49a5a"
-            "editorBracketHighlight.foreground2": "#9ECE6A",  # "#80a856"
-            "editorBracketHighlight.foreground3": "#2AC3DE",  # "#25aac2"
-            "editorBracketHighlight.foreground4": "#BB9AF7",  # "#9a7ecc"
-            "editorBracketHighlight.foreground5": "#7DCFFF",  # "#68b3de"
-            "editorBracketHighlight.foreground6": "#7AA2F7",  # "#698cd6"
-            "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
-            "editorBracketPairGuide.activeBackground1": "#c49a5a",
-            "editorBracketPairGuide.activeBackground2": "#80a856",
-            "editorBracketPairGuide.activeBackground3": "#25aac2",
-            "editorBracketPairGuide.activeBackground4": "#9a7ecc",
-            "editorBracketPairGuide.activeBackground5": "#68b3de",
-            "editorBracketPairGuide.activeBackground6": "#698cd6",
+            # "editorBracketHighlight.foreground1": "#e0af68",  # "#c49a5a"
+            # "editorBracketHighlight.foreground2": "#9ECE6A",  # "#80a856"
+            # "editorBracketHighlight.foreground3": "#2AC3DE",  # "#25aac2"
+            # "editorBracketHighlight.foreground4": "#BB9AF7",  # "#9a7ecc"
+            # "editorBracketHighlight.foreground5": "#7DCFFF",  # "#68b3de"
+            # "editorBracketHighlight.foreground6": "#7AA2F7",  # "#698cd6"
+            # "editorBracketHighlight.unexpectedBracket.foreground": "#db4b4b",
+            # "editorBracketPairGuide.activeBackground1": "#c49a5a",
+            # "editorBracketPairGuide.activeBackground2": "#80a856",
+            # "editorBracketPairGuide.activeBackground3": "#25aac2",
+            # "editorBracketPairGuide.activeBackground4": "#9a7ecc",
+            # "editorBracketPairGuide.activeBackground5": "#68b3de",
+            # "editorBracketPairGuide.activeBackground6": "#698cd6",
             # From before
             "activityBar.background": f"{colors.bg}",
             "activityBar.foreground": f"{colors.gray}",
